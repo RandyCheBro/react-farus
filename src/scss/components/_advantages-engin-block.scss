@@ -1,0 +1,138 @@
+.engin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15.1vw;
+  padding-bottom: 15.1vw;
+
+  &__title {
+    text-align: center;
+    font-size: clamp(14px, 0.411rem + 2.32vw, 46px);
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vw;
+    padding-top: 3.1vw;
+  }
+
+  &__item {
+    width: 72.1vw;
+    height: 9vw;
+    padding: 1.2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.28vw;
+    border-radius: 8.8vw;
+    border: 1px solid rgba(30, 17, 18, 0.30);
+  }
+
+  &__circle-img {
+    min-width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    border: 1px solid rgba(30, 17, 18, 0.30);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    &.img-1 {
+      background-image: url('../../assests/img/advantages-engin-img-1.svg');
+    }
+
+    &.img-2 {
+      background-image: url('../../assests/img/advantages-engin-img-2.svg');
+    }
+
+    &.img-3 {
+      background-image: url('../../assests/img/advantages-engin-img-3.svg');
+    }
+
+    &.img-4 {
+      background-image: url('../../assests/img/advantages-engin-img-4.svg');
+    }
+  }
+
+  &__text-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.053vw;
+  }
+
+  &__top-text {
+    font-size: 2.1vw;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__bottom-text {
+    font-size: 1.8vw;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .engin {
+
+    &__item-list {
+      gap: 1.51vw;
+      padding-top: 4vw;
+    }
+
+    &__item {
+      width: 73.1vw;
+      height: 10.1vw;
+      padding: 1.6vw;
+    }
+
+    &__top-text {
+      font-size: 2.2vw;
+    }
+
+    &__bottom-text {
+      font-size: 1.93vw;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .engin {
+
+    &__item-list {
+      gap: 3vw;
+      padding-top: 6vw;
+    }
+
+    &__item {
+      width: 80vw;
+      height: 14vw;
+      padding: 1.1vw;
+      gap: 2.28vw;
+    }
+
+    &__circle-img {
+      min-width: 8.3vw;
+      height: 8.3vw;
+    }
+
+    &__text-column {
+      gap: 0.09vw;
+    }
+
+    &__top-text {
+      font-size: 2.5vw;
+    }
+
+    &__bottom-text {
+      font-size: 2.4vw;
+      font-weight: 500;
+      line-height: 102%;
+    }
+  }
+}

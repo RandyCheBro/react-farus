@@ -1,0 +1,96 @@
+.practice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8.8vw;
+
+  &__title {
+    font-size: clamp(14px, 0.411rem + 2.32vw, 46px);
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__container {
+    padding-top: 5.6vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 3.5vw;
+    column-gap: 5.8vw;
+  }
+
+  &__card {
+    width: 37vw;
+    height: 25.1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0.85vw;
+
+    &.card-1 {
+      background-image: url("../../assests/img/practice-card-1.png");
+    }
+
+    &.card-2 {
+      background-image: url("../../assests/img/practice-card-2.png");
+    }
+
+    &.card-3 {
+      background-image: url("../../assests/img/practice-card-3.png");
+    }
+
+    &.card-4 {
+      background-image: url("../../assests/img/practice-card-4.png");
+    }
+
+    &.card-5 {
+      background-image: url("../../assests/img/practice-card-5.png");
+    }
+
+    &.card-6 {
+      background-image: url("../../assests/img/practice-card-6.png");
+    }
+  }
+
+  &__card-description {
+    width: 29.7vw;
+    height: 7.2vw;
+    margin-right: -1.8vw;
+    margin-bottom: -0.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.68vw;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 0.85vw;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background: #F1EBE7;
+    box-shadow: 0px 0.035vw 1.035vw 0px rgba(0, 0, 0, 0.25);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .practice {
+    &__card {
+      width: 40vw;
+      height: 26.1vw;
+      border-radius: 1.2vw;
+    }
+
+    &__card-description {
+      padding: 1vw;
+      width: 30.7vw;
+      height: 8.2vw;
+      margin-right: -1.8vw;
+      margin-bottom: -1.5vw;
+      font-size: 2.1vw;
+      line-height: 105%;
+    }
+  }
+}

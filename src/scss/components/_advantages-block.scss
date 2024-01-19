@@ -1,0 +1,87 @@
+.advantage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15.1vw;
+  padding-bottom: 15.1vw;
+
+  &__title {
+    text-align: center;
+    font-size: clamp(14px, 0.411rem + 2.32vw, 46px);
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__list {
+    padding-top: 4vw;
+    display: grid;
+    grid-template-rows: repeat(3, 6.96vw);
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 4.64vw;
+    column-gap: 1.16vw;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 1.93vw;
+  }
+
+  &__check-mark {
+    width: 3.77vw;
+    height: 3.77vw;
+    border-radius: 0.96vw;
+    border: 1px solid #000;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-image: url('../../assests/img/white-check.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: #013A33;
+  }
+
+  .background-white {
+    background-image: url('../../assests/img/green-check.svg');
+    background-color: #FFF;
+  }
+
+  &__text {
+    width: 31.2vw;
+    font-size: 1.93vw;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .advantage {
+
+    &__list {
+      padding-top: 6vw;
+      display: grid;
+      grid-template-rows: repeat(3, 10.96vw);
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 4.64vw;
+      column-gap: 2.16vw;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 2.2vw;
+    }
+
+    &__check-mark {
+      width: 4.77vw;
+      height: 4.77vw;
+    }
+
+
+    &__text {
+      width: 37.2vw;
+      font-size: 2.4vw;
+      font-weight: 500;
+    }
+  }
+}
